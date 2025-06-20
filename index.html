@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RentaFácil Autos</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0055a5;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .intro {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .vehicles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .vehicle-card {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .vehicle-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RentaFácil Autos</h1>
+    <p>Tu viaje comienza aquí</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Vehículos</a>
+    <a href="#">Reservar</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <section class="intro">
+      <h2>Bienvenido a RentaFácil Autos</h2>
+      <p>Ofrecemos una amplia gama de vehículos para tus viajes, negocios o aventuras. Con precios accesibles y servicio al cliente de primera, ¡rentamos fácil y rápido!</p>
+    </section>
+
+    <section class="vehicles">
+      <div class="vehicle-card">
+        <img src="https://via.placeholder.com/300x180?text=Sedán+Económico" alt="Sedán Económico" />
+        <h3>Sedán Económico</h3>
+        <p>Desde $25/día</p>
+      </div>
+      <div class="vehicle-card">
+        <img src="https://via.placeholder.com/300x180?text=Camioneta+Familiar" alt="Camioneta Familiar" />
+        <h3>Camioneta Familiar</h3>
+        <p>Desde $45/día</p>
+      </div>
+      <div class="vehicle-card">
+        <img src="https://via.placeholder.com/300x180?text=Auto+Deportivo" alt="Auto Deportivo" />
+        <h3>Auto Deportivo</h3>
+        <p>Desde $60/día</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>📍 San Salvador, El Salvador | 📞 +503 7000-0000 | ✉ contacto@rentafacil.com</p>
+    <p>&copy; 2025 RentaFácil Autos</p>
+  </footer>
+</body>
+</html>
