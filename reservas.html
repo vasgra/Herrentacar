@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservar Vehículo</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f0f4f7; }
+    h1 { color: #003366; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+    th { background: #003366; color: white; }
+    .formulario { background: white; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    label { display: block; margin-top: 10px; }
+    input, select { width: 100%; padding: 8px; margin-top: 5px; }
+    button { margin-top: 15px; padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+
+  <h1>Reserva tu Vehículo</h1>
+
+  <h2>📅 Disponibilidad</h2>
+  <table>
+    <tr>
+      <th>Vehículo</th>
+      <th>20 Jun</th>
+      <th>21 Jun</th>
+      <th>22 Jun</th>
+      <th>23 Jun</th>
+    </tr>
+    <tr>
+      <td>Suzuki Swift</td>
+      <td style="background-color: lightgreen;">✔️</td>
+      <td style="background-color: tomato;">Ocupado</td>
+      <td style="background-color: lightgreen;">✔️</td>
+      <td style="background-color: lightgreen;">✔️</td>
+    </tr>
+    <tr>
+      <td>Toyota Hilux</td>
+      <td style="background-color: tomato;">Ocupado</td>
+      <td style="background-color: lightgreen;">✔️</td>
+      <td style="background-color: lightgreen;">✔️</td>
+      <td style="background-color: lightgreen;">✔️</td>
+    </tr>
+  </table>
+
+  <div class="formulario">
+    <h2>📝 Formulario de Reserva</h2>
+    <form>
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="vehiculo">Selecciona el vehículo:</label>
+      <select id="vehiculo" name="vehiculo">
+        <option value="Suzuki Swift">Suzuki Swift</option>
+        <option value="Toyota Hilux">Toyota Hilux</option>
+      </select>
+
+      <label for="fecha">Fecha deseada:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <label for="contacto">Teléfono o correo electrónico:</label>
+      <input type="text" id="contacto" name="contacto" required>
+
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+  </div>
+
+</body>
+</html>
